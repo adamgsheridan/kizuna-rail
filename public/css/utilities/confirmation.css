@@ -406,14 +406,28 @@ article.confirmation-page {
 }
 
 @media print {
-    article.confirmation-page {
-        .confirmation-actions {
-            display: none;
-        }
 
-        .confirmation-header {
-            background-color: white;
-            border: 2px solid var(--clr-primary);
-        }
+    header,
+    footer,
+    nav,
+    .btn-icon,
+    .important-info,
+    .confirmation-actions,
+    .next-steps,
+    .confirmation-message,
+    .confirmation-title,
+    .success-icon {
+        display: none !important;
+    }
+
+    article.confirmation-page,
+    .content-grid,
+    main,
+    .confirmation-header,
+    body {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 }
